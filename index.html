@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Нарезка и накатка резьбы | RusElekt</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">RUS<span>ELEKT</span></div>
+                <div class="nav-links">
+                    <a href="#services">Услуги</a>
+                    <a href="#advantages">Преимущества</a>
+                    <a href="#gallery">Галерея</a>
+                    <a href="#contacts">Контакты</a>
+                </div>
+                <button class="mobile-menu-btn">
+                    <span></span>
+                </button>
+            </nav>
+            <div class="hero">
+                <div class="hero-bg" style="background: linear-gradient(rgba(26, 75, 140, 0.9), rgba(26, 75, 140, 0.9)), url('./images/Nail-Threading-Machine-1.jpg') center/cover;"></div>
+                <h1>Профессиональная нарезка и накатка резьбы</h1>
+                <p>Высокоточное оборудование • Квалифицированные специалисты • Строгое соблюдение ГОСТ</p>
+                <div class="cta-buttons">
+                    <a href="#quote" class="btn btn-primary">Рассчитать заказ</a>
+                    <a href="#contacts" class="btn btn-secondary">Связаться с нами</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services -->
+    <section id="services" class="services">
+        <div class="container">
+            <h2>Наши услуги</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fas fa-cog"></i>
+                    <h3>Внутренняя нарезка резьбы</h3>
+                    <p>Точная нарезка внутренней резьбы любой сложности с соблюдением всех стандартов</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-tools"></i>
+                    <h3>Наружная нарезка резьбы</h3>
+                    <p>Качественная нарезка наружной резьбы с высокой точностью исполнения</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-industry"></i>
+                    <h3>Накатка резьбы</h3>
+                    <p>Накатка резьбы любых типоразмеров на современном оборудовании</p>
+                </div>
+                <div class="service-card">
+                    <i class="fas fa-drafting-compass"></i>
+                    <h3>Работа по чертежам</h3>
+                    <p>Изготовление деталей по индивидуальным чертежам заказчика</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Advantages -->
+    <section id="advantages" class="advantages">
+        <div class="container">
+            <h2>Наши преимущества</h2>
+            <div class="advantages-grid">
+                <div class="advantage-card">
+                    <i class="fas fa-clock"></i>
+                    <h3>Быстрые сроки</h3>
+                    <p>Выполнение заказов в кратчайшие сроки без потери качества</p>
+                </div>
+                <div class="advantage-card">
+                    <i class="fas fa-certificate"></i>
+                    <h3>Соответствие ГОСТ</h3>
+                    <p>Все работы выполняются в строгом соответствии с ГОСТ</p>
+                </div>
+                <div class="advantage-card">
+                    <i class="fas fa-users-cog"></i>
+                    <h3>Опытные специалисты</h3>
+                    <p>Команда квалифицированных специалистов с многолетним опытом</p>
+                </div>
+                <div class="advantage-card">
+                    <i class="fas fa-robot"></i>
+                    <h3>Современное оборудование</h3>
+                    <p>Используем высокоточное современное оборудование</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery" class="gallery">
+        <div class="container">
+            <h2>Галерея</h2>
+            <div class="gallery-grid">
+                <div class="gallery-item">
+                    <img src="./images/Nail-Threading-Machine-1.jpg" alt="Промышленное оборудование для нарезки резьбы">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/1221.jpg" alt="Станок для нарезки резьбы">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/Rezbonakatka_1-627x720.jpg" alt="Процесс накатки резьбы">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/nakatka_rezby_rolikami.webp" alt="Накатка резьбы роликами">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/thread-detail.jpg" alt="Готовое изделие с резьбой">
+                </div>
+                <div class="gallery-item">
+                    <img src="./images/rezby-razlichnogo-profilya.png" alt="Резьбы различного профиля">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quote Form -->
+    <section id="quote" class="quote">
+        <div class="container">
+            <h2>Рассчитать стоимость заказа</h2>
+            <form class="quote-form" action="https://formspree.io/f/xeoadpdo" method="POST" enctype="multipart/form-data">
+                <div class="form-grid">
+                    <div class="form-group">
+                        <label for="thread-type">Тип резьбы</label>
+                        <select id="thread-type" name="thread-type" required>
+                            <option value="">Выберите тип резьбы</option>
+                            <option value="internal">Внутренняя резьба</option>
+                            <option value="external">Наружная резьба</option>
+                            <option value="rolling">Накатная резьба</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity">Количество</label>
+                        <input type="number" id="quantity" name="quantity" min="1" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="drawing">Чертёж</label>
+                        <input type="file" id="drawing" name="drawing" accept=".pdf,.dwg,.dxf">
+                    </div>
+                    <div class="form-group">
+                        <label for="contact">Контактный телефон</label>
+                        <input type="tel" id="contact" name="contact" required>
+                    </div>
+                    <input type="hidden" name="_subject" value="Новая заявка на резьбу - RusElekt">
+                    <input type="hidden" name="_next" value="https://ruselekt.ru/thank-you">
+                </div>
+                <button type="submit" class="btn btn-primary">Отправить заявку</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Certificates -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <h2>Сертификаты и гарантии</h2>
+            <div class="certificates-grid">
+                <div class="certificate-card">
+                    <img src="./images/cert-1.jpg" alt="Сертификат качества">
+                    <h3>ISO 9001:2015</h3>
+                </div>
+                <div class="certificate-card">
+                    <img src="./images/cert-2.jpg" alt="Сертификат соответствия">
+                    <h3>ГОСТ Р</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacts -->
+    <section id="contacts" class="contacts">
+        <div class="container">
+            <h2>Контакты</h2>
+            <div class="contacts-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <p>+7 812 240-83-11</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>sales@ruselekt.ru</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <p>192102, город Санкт-Петербург, ул. Салова, д. 47 литера А</p>
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.8959013906523!2d30.35754561744384!3d59.891876199999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x469631b8c53341ef%3A0x4f8890e4164c8c7b!2z0YPQuy4g0KHQsNC70L7QstCwLCA0NyDQu9C40YIuINCQLCDQodCw0L3QutGCLdCf0LXRgtC10YDQsywgMTkyMTAy!5e0!3m2!1sru!2sru!4v1681563606975!5m2!1sru!2sru" width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="logo">RUS<span>ELEKT</span></div>
+                <p>&copy; 2025 RusElekt. Все права защищены</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
